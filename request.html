@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LifeLine helps people find blood donors and become donors.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Request Blood | LifeLine Blood Donors</title>
+  <link href="bs/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">LifeLine</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Toggle menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="donors.html">Find Donors</a></li><li class="nav-item"><a class="nav-link" href="register.html">Become a Donor</a></li><li class="nav-item"><a class="nav-link active" href="request.html">Request Blood</a></li><li class="nav-item"><a class="nav-link" href="camps.html">Blood Camps</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul></div>
+  </div>
+</nav>
+<header class="page-head"><div class="container"><h1>Request blood</h1><p class="mb-0 text-secondary">Tell us what the patient needs. Nearby donors will be notified.</p></div></header><section class="section"><div class="container"><div class="row justify-content-center"><div class="col-lg-8">
+<div class="alert alert-danger">For a life-threatening emergency, go straight to the nearest hospital blood bank.</div>
+<form class="panel" action="thankyou.html" method="get"><div class="row g-3">
+<div class="col-md-6"><label for="pn" class="form-label">Patient name</label><input type="text" class="form-control" id="pn" placeholder="Patient's name" required></div><div class="col-md-6"><label for="pb" class="form-label">Blood group needed</label><select class="form-select" id="pb" required><option value="">Select group</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></div><div class="col-md-6"><label for="hs" class="form-label">Hospital</label><input type="text" class="form-control" id="hs" placeholder="Hospital name" required></div><div class="col-md-6"><label for="pc" class="form-label">City</label><select class="form-select" id="pc" required><option value="">Select city</option><option>Bahawalpur</option><option>Lahore</option><option>Karachi</option><option>Islamabad</option><option>Multan</option><option>Faisalabad</option></select></div><div class="col-md-6"><label for="ug" class="form-label">Urgency</label><select class="form-select" id="ug" required><option value="">Select urgency</option><option>Within 24 hours</option><option>Within 3 days</option><option>Planned surgery</option></select></div><div class="col-md-6"><label for="pt" class="form-label">Your contact number</label><input type="tel" class="form-control" id="pt" placeholder="03XX XXXXXXX" required></div>
+<div class="col-12"><label for="nt" class="form-label">Extra details (optional)</label><textarea class="form-control" id="nt" rows="3" placeholder="Number of bags, ward, doctor's name"></textarea></div>
+<div class="col-12"><small class="text-secondary">Fields marked optional can be left empty. Everything else is required.</small></div>
+<div class="col-12"><button type="submit" class="btn btn-red">Send request</button></div></div></form></div></div></div></section>
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6"><h5 class="text-white">LifeLine Blood Donors</h5><p>Connecting people who need blood with people who can give it.</p></div>
+      <div class="col-md-3"><h6 class="text-white">Pages</h6><a href="donors.html">Find Donors</a><br><a href="register.html">Become a Donor</a><br><a href="request.html">Request Blood</a><br><a href="camps.html">Blood Camps</a><br><a href="privacy.html">Privacy Policy</a></div>
+      <div class="col-md-3"><h6 class="text-white">Contact</h6>help@lifeline.example<br>+92 300 0000000</div>
+    </div>
+    <hr style="border-color:#5a4045"><small>&copy; 2026 LifeLine. University project. All donor names and numbers on this site are sample data.</small>
+  </div>
+</footer>
+<script src="bs/bootstrap.bundle.min.js"></script>
+</body>
+</html>
